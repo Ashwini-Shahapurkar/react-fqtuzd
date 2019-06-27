@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Demo.css';
+
 class Demo extends Component {
   render() {
     return (
@@ -8,5 +10,4 @@ class Demo extends Component {
     );
   }
 }
-
 export default Demo;

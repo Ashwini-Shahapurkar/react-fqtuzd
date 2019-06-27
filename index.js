@@ -5,6 +5,7 @@ import './style.css';
 import ReactDOM from 'react-dom';
 import Demo from './Demo.js'; 
 
+/*
 class App extends Component {
   constructor() {
     super();
@@ -23,10 +24,10 @@ class App extends Component {
 }
 
 //::::::::::::::::::::::::::::::::correct
-//render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
 
 //::::::::::::::::::::::::::::::;::correct
-/*function Person(props){
+function Person(props){
   
   return (
     <div className="person">
@@ -45,19 +46,27 @@ var app1=(
 )
 
 ReactDOM.render(app1,document.querySelector("#app1"));
-*/
+
 
 
 //:::::::::::::::::::::::::::::::correct
-/*class Test extends Component{
+class Test extends Component{
   render(){
-  return  <h1>hello world learning react is my dream</h1>
+  return  (
+    <div className="test">
+    <h1>hello world learning react is my dream</h1>
+    </div>
+    );
   }
 }
+//::::::::::::::::::::::::::::::CORRECT
+//ReactDOM.render(<Test /> ,document.getElementById("test"));
+
+//:::::::::::::::::::::::::::::CORRECT
 ReactDOM.render(<Test />,document.querySelector("#test"));
 */
 
-//::::::::::::::::::::::::::::correct
+//::::::::::::::::::::::::::::correct??????????????????????????
 var x=33;
 class Externalfile extends Component{
   render(){
@@ -72,6 +81,16 @@ class Externalfile extends Component{
 }
 ReactDOM.render(<Externalfile />,document.querySelector("#app2"));
 
-//:::::::::::::::::::::::::::::::::correct
+
+//:::::::::::::::::::::::::::::::::correct?????????????????
 var u=567;
 console.log(u);
+
+const myhometown=<h1>Aurangabad</h1>
+//::::::::::::::::::::::::::correct
+//ReactDOM.render(myhometown);
+
+//:::::::::::::::::::::::correct
+//ReactDOM.render(myhometown,document.getElementById("town"));
+
+ReactDOM.render(myhometown,document.querySelector("#town"));
