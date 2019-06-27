@@ -146,8 +146,13 @@ class Branch extends Tree {
     this.color = co;
   }  
   show() {
-      return this.present1() + ', it is a ' + this.co;
+      return this.present1() + ', it is  ' + this.color;
   }
 }
 var myfav = new Branch("apple", "red");
-document.write(mycar.show);
+document.write(myfav.show());
+
+var hello = function() {
+  return "Hello World! from hello arrow function";
+}
+document.write(hello());
