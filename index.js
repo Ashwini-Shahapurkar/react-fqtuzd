@@ -66,6 +66,7 @@ class Test extends Component{
 ReactDOM.render(<Test />,document.querySelector("#test"));
 */
 
+/*
 //::::::::::::::::::::::::::::correct??????????????????????????
 var x=33;
 class Externalfile extends Component{
@@ -94,3 +95,35 @@ const myhometown=<h1>Aurangabad</h1>
 //ReactDOM.render(myhometown,document.getElementById("town"));
 
 ReactDOM.render(myhometown,document.querySelector("#town"));
+*/
+
+//classes creation of object
+//::::::::::::::correct
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+  }
+
+var mycar = new Car("Ford");
+document.write(mycar.brand);
+console.log(mycar.brand);
+
+//how to write object in reactdom ??????????????error
+//ReactDOM.render(<mycar name="suzuki"/>,document.querySelector("#car"));
+
+//class creation of method inside classes
+//:::::::::::::::::::::correct
+class RollNo{
+  constructor(no){
+    this.id=no;
+  }
+ 
+  present(){
+    return "i have this roll no" +this.id;
+  }
+}
+
+var student1=new RollNo(20057645);
+document.write(student1.id);
+document.write(student1.present());
