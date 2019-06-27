@@ -126,4 +126,28 @@ class RollNo{
 
 var student1=new RollNo(20057645);
 document.write(student1.id);
+console.log(student1.id);
 document.write(student1.present());
+
+//inherited classes
+class Tree {
+  constructor(name) {
+    this.fruit = name;
+  }
+
+  present1() {
+    return 'I have a ' + this.fruit;
+  }
+}
+
+class Branch extends Tree {
+  constructor(name, co) {
+    super(name);
+    this.color = co;
+  }  
+  show() {
+      return this.present1() + ', it is a ' + this.co;
+  }
+}
+var myfav = new Branch("apple", "red");
+document.write(mycar.show);
