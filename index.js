@@ -120,7 +120,7 @@ class RollNo{
   }
  
   present(){
-    return "i have this roll no" +this.id;
+    return "   i have this roll no" +this.id;
   }
 }
 
@@ -136,7 +136,7 @@ class Tree {
   }
 
   present1() {
-    return 'I have a ' + this.fruit;
+    return '   I have a ' + this.fruit;
   }
 }
 
@@ -149,10 +149,23 @@ class Branch extends Tree {
       return this.present1() + ', it is  ' + this.color;
   }
 }
+
 var myfav = new Branch("apple", "red");
 document.write(myfav.show());
 
+//function concate with variable
+//:::::::::::::::::::::correct 
+var w=420;
 var hello = function() {
-  return "Hello World! from hello arrow function";
+  return "   Hello World! from hello function"+" "+w;
 }
 document.write(hello());
+console.log(hello());
+
+//arrow function concated with other function
+//:::::::::::::correct
+var joy=()=>{
+  return "i am joy....hello from joy ....arrow function"+hello();
+}
+document.write(joy());
+console.log(joy());
